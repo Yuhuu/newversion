@@ -111,7 +111,9 @@ li {
   text-transform: uppercase;
 }
 
-
+#indexPublisering p {
+  text-align: center;
+}
 
 #msg {
   margin-top: -12px;
@@ -236,6 +238,51 @@ background: rgba(97, 58, 36, 0.6);
   display: inline-block;
   padding: 0px;
 }
+.indexItem-rightsideBar{
+  margin-top:4px;
+  margin-left:5px;
+  padding: 5px;
+  width: 94%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+  background: #F5F5F0;
+}
+.indexItem-rightsideBar a {
+   color: #0094DE;
+    text-decoration: none;
+}
+.indexItem-rightsideBar a:hover {
+  color: white;
+}
+
+#indexpublisering {
+  position: relative; 
+  margin: 0 30px;
+  background: white;
+  display: inline-block;
+  padding: 0px;
+}
+.indexItemIn{
+  margin-top:4px;
+  margin-left:5px;
+  padding: 5px;
+  width: 48%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+  background: #F5F5F0;
+}
+.indexItemTilbud {
+  margin-top:4px;
+  margin-left:5px;
+  padding: 5px;
+  width: 98%;
+  float: left;
+  height: 100%;
+  display: inline-block;
+   background: #F5F5F0;
+}
 /*#publisering ::after {
   content: ".";
   display: block;
@@ -244,12 +291,20 @@ background: rgba(97, 58, 36, 0.6);
   line-height: 0;
   height: 0;
 }*/
-/*.clear {
+.clear {
     clear: both;
-}*/
+}
 .question {
   background-position: 0 10px;
   background: url(//wwwimg.roku.com/hero-images/sprite_meet-roku-wide.png) no-repeat;
+}
+.TransBG {
+  background: url('shadow.png') no-repeat scroll 100% 0px ;
+  padding: 14px;
+  margin:-4px;
+}
+.greyBG {
+  background-color: #313131;
 }
 .nav_ul{
 display: block;
@@ -265,6 +320,30 @@ overflow: hidden;
 }
 .left_side table {
   font-size: 92%;
+}
+.indexItem{
+  margin: 5px;
+  width: 70%;
+  float: left;
+  background: #F5F5F0;
+}
+.index-rightsideBar{
+  margin: 5px;
+  background: #313131;
+  width: 26%;
+  float: left;
+  height: 100%;
+  padding: 5px;
+}
+.IndexitemImg {
+  display: inline-block;
+  height: 100px;
+  width: 30%;
+}
+.IndexitemImgTilbud{
+  display: inline-block;
+  height: 100px;
+  width: 49%;
 }
 .item {
   margin: 5px;
@@ -282,7 +361,6 @@ height: 46%;
 }
 #itemImg {
   display: block;
-  border: 0;
   height: 300px;
   width: 100%;
 }
