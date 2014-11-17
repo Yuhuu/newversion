@@ -1,0 +1,246 @@
+/*******************
+style sheet for forum.php og tema.php
+*******************/
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+@media screen and (min-device-width: 1026px) {
+html {
+ width: 100%;
+ padding:0;
+}
+body {
+ padding:0px;
+ margin:0px;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ font-weight: 300;
+}
+div, p, td, th, li {
+        word-break: break-all;
+        margin: 0px;
+        padding: 0px;
+    }
+    ul, ol {
+        list-style: none outside none;
+        margin: 0px;
+        padding: 0px;
+    }
+    img {
+        border: 0 none;
+        height: auto;
+        vertical-align: middle;
+    }
+    .promotion-banner {
+        height: 80px;
+        margin-bottom: 10px;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .promotion-banner img {
+        display: block;
+        /*width: 1132px;*/
+    }
+    .promotion-banner .carousel-pager {
+        bottom: 5px;
+        margin: 0;
+        position: absolute;
+        right: 5px;
+    }
+    .promotion-banner .pgn {
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #999;
+        cursor: pointer;
+        display: block;
+        float: left;
+        font-size: 12px;
+        height: 15px;
+        line-height: 15px;
+        text-align: center;
+        width: 15px;
+    }
+    .promotion-banner .pgn + li {
+        margin-left: 5px;
+    }
+    .promotion-banner .pgn.selected {
+        background-color: rgba(255, 102, 0, 0.8);
+        color: white;
+        font-weight: bold;
+    }
+    .trans-even{
+        -moz-transition: margin-top 1s linear;
+        -webkit-transition: margin-top 1s linear;
+        -o-transition: margin-top 1s linear;
+        transition: margin-top 1s linear;
+    }
+    .trans-odd{
+        -moz-transition: margin-top 1s linear;
+        -webkit-transition: margin-top 1s linear;
+        -o-transition: margin-top 1s linear;
+        transition: margin-top 1s linear;
+    }  
+a {
+text-decoration: none;
+}
+#temarammen,iframe { 
+  width: 100%;
+}
+table {
+  background-color: rgb(211, 211, 211);
+  border:none;
+  margin-top: -17px;
+  padding:25px 5px;
+}
+div {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+        border: 0 none;
+        height: auto;
+        vertical-align: middle;
+    }
+footer{
+text-align: center;
+margin-top: 10px;
+}
+li {
+  list-style: none;
+  float: left;
+  text-align: center;
+}
+#location {
+  position: fixed;
+  top:20px;
+  right: 70px;  
+}
+
+#msg {
+  height: 2000px;
+  margin-top: -12px;
+  padding: 10px;
+ }
+#main_nav  li:hover {
+background: rgba(97, 58, 36, 0.9);
+}
+
+#main_nav li {
+width: 128px;
+height: 115px;
+margin: 0 0 0 42px;
+background: rgba(97, 58, 36, 0.6);
+}
+#main_nav a {
+  display: block;
+  padding: 67px 0 0;
+  width: 128px;
+  height: 49px;
+  color: #fff;
+  text-decoration: none;
+}
+#askAdmin a {
+   text-decoration: underline;
+   color: red;
+}
+/*#main_nav {
+  margin: 40px;
+}*/
+
+/*#leftside {
+  background: rgb(38, 38, 38);
+  width:260px;
+  text-align: center;
+  padding-left: 5px;
+}*/
+/*#placeright {
+  width:700px;
+  margin-top: 20px;
+  margin-left:300px;
+}
+#post_chat {
+  background-color: white;
+}
+#rightdiv{
+  padding:20px;
+}*/
+#newDIV {
+  margin-right: 20px;
+  margin-top: 30px;
+  width:100%;
+}
+#narrowbody {
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 0px;
+   position: relative;
+   text-align: center;
+   padding-top: 5px; 
+}
+#newTable {
+    margin:15px;
+    padding: 25px;
+    border-radius: 5px 5px;
+    border: 1px solid rgb(240, 195, 109);;
+}
+#tema {
+ display: inline-block;
+ background-color: rgb(211, 211, 211);
+ margin-top: 5px;
+}
+#tema {
+ float: left;
+ width: 250px;
+}
+#temarammen {
+  background-size: 0.6%;
+  padding:5px;
+  }
+/*#nav_bar {
+ margin-left: auto;
+ margin-right: auto;
+}*/
+
+.titlebar {
+  border-radius: 2px;
+  height: 25px;
+  background-size: 100%;
+  margin-top: -14px;
+  box-shadow: 0px 1px rgba(255, 255, 255, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
+}
+.bigtitle {
+    position: relative;
+    font-family:Nosifer,sans-serif;
+    font-size: 43px;
+    text-shadow: 4px 1px 1px rgb(68, 68, 68);
+    text-align: center;
+    background: rgba(97, 58, 36, 0.9);
+    margin-top: 76px;
+  opacity: 0.6;
+}
+.padding {
+  margin-left: 10px;
+}
+.bigtitle a {
+  color: #fff;
+}
+
+.question {
+  background-position: 0 10px;
+  background: url(//wwwimg.roku.com/hero-images/sprite_meet-roku-wide.png) no-repeat;
+}
+.nav_ul{
+display: block;
+width: 1008px;
+margin: 235px auto 0 auto;
+font-size: 18px;
+line-height: 20px;
+overflow: hidden;
+}
+.whiteBG {
+  background: #fff;
+}
+.left_side > table {
+  font-size: 92%;
+}
+#newPost,.postKommentar,.msg,#main_a,#narrowbody {
+  height: 100%;
+}
+}

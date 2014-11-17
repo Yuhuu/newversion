@@ -1,0 +1,15 @@
+/*******************
+style sheet for forum.php og tema.php
+*******************/
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+@media screen and (min-device-width: 1026px) {
+body {
+ margin-left:auto;
+ margin-right:auto;
+ background-size:100%;
+ padding-top:0;
+ }
+ h1 {
+  font-size: 20px;
+ }
+

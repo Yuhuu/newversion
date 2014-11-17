@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 780px)" href="index.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/ico">
+	<title>Kebab i Oslo</title>
+	<script type="text/javascript" src='slider.js'></script>
+</head>
+<body>
+<div id="container">
+</div>
+<div id="BG-top">
+<div class="bigtitle"><a href="index.html" id ="kebabiOslo">hovedSide</a>
+</div>
+<script type="text/javascript" src="lokasjon.js"></script>
+  <div id="narrowbody">
+  <div id="msg" class="msg">
+	<div id="temarammen" class="temarammen">
+		<nav id="main_nav">
+		 <ul class="nav_ul">
+		    <li><a class="question" href="page1.html">Nettsedkart</a></li>
+		    <li><a href="page2.html">Søkebokser</a></li>
+		    <li><a href="kommentar.html">Skrive epost til oss</a></li>
+		    <li><a href="publisering.php">Bla gjennom</a></li>
+		    <li><a href="page5.html">Populær</a></li>
+		  </ul>
+		 </nav><!--end nav 1 -->
+		<!-- <iframe src="articlepost.php" style="border:0px;" 
+		name="temaFrame" onload="this.width=screen.width;this.height=screen.height;">
+		</iframe>  -->
+		<!-- this iframe is the one for picture and kommentar -->
+	</div><!-- end temarammen -->
+	<div class="whiteBG" id="askAdmin">
+			<h3>Du mer enn velkommen til å skrive en kommentar til kebab </h3>
+			<h3>Har du innspill eller andre tips? Fortell oss i kommentarfeltet!  </h3>
+			<h3>Det kan du også send oss E-post om du har spørsmål </h3>
+			<p> Sørg spesielt for at du skriver din e-postadresse riktig </p>
+			<p> da kan vi svar deg via e-post!</p>
+			<button onclick="myFunction()">Send oss en Epost</button>
+
+	</div>
+
+    </div><!-- end "msg" -->
+	</div><!--end narrowbody-->
+    <script type="text/javascript" src="footer.js"></script>
+    <script>
+function myFunction() {
+    window.open("sendEpost.php", "_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top=200, left=500, width=400, height=400");
+}
+</script>
+   <!--end  <script type="text/javascript" src="hilse.js"></script>p -->
+</div><!--end bgtop -->
+</body>
+</html>
