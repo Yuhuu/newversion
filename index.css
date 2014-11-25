@@ -1,26 +1,32 @@
 /*******************
 style sheet for index.html
 *******************/
-html,body {
+html{
+  height: auto !important;
+}
+
+body {
  background: rgba(000, 000, 000);
  background-size:100%;
  padding:0px;
  margin:0px;
- font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  font-weight: 300;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #navigation {
-background: rgb(249, 151, 056);
+  background: rgb(249, 151, 056);
+  width: auto;
 }
 #navigation ul {
   margin: 0;
-  margin-top:80px;
+  margin-top:360px;   /*180px*/
+  -moz-margin-top:360px !important;
   padding: 0;
   line-height: 0;
   display: block;
-  zoom: 1.9;
+  zoom: 2;
   list-style: none;
  }
 #navigation ul:after {
@@ -48,7 +54,7 @@ background: rgb(249, 151, 056);
   display: block;
   font-size: 15px;
   position: relative;
-  padding: 15px 30px;
+  padding: 15px 20px;       /*15px 30px*/
   font-family: Impact, Charcoal, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -71,8 +77,8 @@ background: rgb(249, 151, 056);
   right: -3px;
   top: 13px;
   height: 6px;
-  width: 6px;
-  background: rgb( 178, 014, 058); 
+  width: 6px;                   /*prikkene mellom ordene*/
+  background: rgb( 178, 014, 058);
 
 }
 #navigation ul li a:before {
@@ -118,13 +124,6 @@ background: rgb(249, 151, 056);
     display: none;
   }
 }
-
-@-moz-document url-prefix(){
-  #navigation ul {
-    margin: 0;
-    margin-top:90px !important;
-  }
-}
 @import url(http://fonts.googleapis.com/css?family=Nosifer);
 @media screen and (min-device-width: 1026px) {
 html {
@@ -136,7 +135,7 @@ a {
 text-decoration: none;
 display: block;
 }
-#temarammen,iframe { 
+#temarammen,iframe {
   width: 100%;
 }
 #footer p {
@@ -213,7 +212,7 @@ ul, ol {
         -webkit-transition: margin-top 1s linear;
         -o-transition: margin-top 1s linear;
         transition: margin-top 1s linear;
-    }  
+    }
     footer{
 text-align: center;
 margin-top: 10px;
@@ -221,7 +220,7 @@ margin-top: 10px;
 li {
   list-style: none;
   text-align: center;
-} 
+}
 
 #publisering p {
   text-transform: uppercase;
@@ -252,7 +251,7 @@ li {
    margin-top: -260px;
    position: relative;
    text-align: center;
-   padding-top: inherit; 
+   padding-top: inherit;
 }
 
 #tema {
@@ -302,6 +301,7 @@ li {
     border: 0;
     top-margin:0px;
     z-index:120;
+    top: 0px;
 }
 
 #logo a {
@@ -315,7 +315,7 @@ li {
   position: fixed;
   z-index:150;
   top:70px;
-  right: 129px; 
+  right: 129px;
   font-weight: 500;
 }
 #NO,#EN{
@@ -328,24 +328,24 @@ li {
   float: left;
 }
 #NO a {background: url(image/No.png) no-repeat 43% 48%;
-  background-size: 30px 30px; 
+  background-size: 30px 30px;
 }
 #EN a {background: url(image/En.png) no-repeat 43% 48%;
-  background-size: 30px 30px; 
+  background-size: 30px 30px;
 }
 #EN a:hover {
   color: #000;
   background: url(image/EnHover.png) no-repeat 43% 48%;
-  background-size: 30px 30px; 
+  background-size: 30px 30px;
 }
 
 #NO a:hover {
   color: #000;
   background: url(image/NoHover.png) no-repeat 43% 48%;
-  background-size: 30px 30px; 
+  background-size: 30px 30px;
 }
 #publisering {
-  position: relative; 
+  position: relative;
   margin: 0 30px;
   background: white;
   display: inline-block;
@@ -353,24 +353,26 @@ li {
 }
 .indexItem-rightsideBar{
   margin-top:4px;
-  margin-left:5px;
+  margin-left:5px;  /*5px*/
   padding: 5px;
-  width: 94%;
+  left: 100px;
+  width: 94%;   /*94%*/
   float: left;
   height: 100%;
   display: inline-block;
-  background: #F5F5F0;
+  background: rgb(249, 151, 056);        /*#F5F5F0*/
 }
 .indexItem-rightsideBar a {
-   color: #0094DE;
+   color: rgb( 178, 014, 058);          /*#0094DE*/
     text-decoration: none;
+    font-weight: bold;
 }
 .indexItem-rightsideBar a:hover {
   color: white;
 }
 
 #indexpublisering {
-  position: relative; 
+  position: relative;
   margin: 0 30px;
   background: white;
   display: inline-block;
@@ -439,12 +441,14 @@ overflow: hidden;
   width: 70%;
   float: left;
   background: #F5F5F0;
+  margin-top: 2px;
 }
 .index-rightsideBar{
   margin: 5px;
   background: #313131;
-  width: 26%;
+  width: 27%;   /*26%*/
   float: left;
+  margin-left: 12px;
   height: 100%;
   padding: 5px;
 }
@@ -518,4 +522,30 @@ height: 46%;
 #newPost,.postKommentar,.msg,#main_a,#narrowbody {
   height: 100%;
 }
+
+#twitt{
+  float: left;
+  /*right: 900px;*/
+  margin-left: 0%;
+}
+#faceb{
+  float: left;
+  /*right: 900px;*/
+  margin-left: 50%;   /*71%*/
+  z-index: 200;
+  top: 0px;
+}
+#insta{
+  float: left;
+  margin-left: 0%;
+  z-index: 1;
+}
+@-moz-document url-prefix(){
+  #navigation ul {
+    margin: 0;
+    margin-top:360px;   /*180px*/
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio:0){
+  #navigation ul{margin-top:180px;}
 }
