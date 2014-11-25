@@ -1,7 +1,7 @@
 /*******************
 style sheet for index.html
 *******************/
-body {
+html,body {
  background: rgba(000, 000, 000);
  background-size:100%;
  padding:0px;
@@ -13,15 +13,14 @@ body {
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #navigation {
 background: rgb(249, 151, 056);
-  width: auto;
 }
 #navigation ul {
   margin: 0;
-  margin-top:180px;
+  margin-top:80px;
   padding: 0;
   line-height: 0;
   display: block;
-  zoom: 2;
+  zoom: 1.9;
   list-style: none;
  }
 #navigation ul:after {
@@ -117,6 +116,13 @@ background: rgb(249, 151, 056);
   }
   #navigation ul li a:before {
     display: none;
+  }
+}
+
+@-moz-document url-prefix(){
+  #navigation ul {
+    margin: 0;
+    margin-top:90px !important;
   }
 }
 @import url(http://fonts.googleapis.com/css?family=Nosifer);

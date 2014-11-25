@@ -1,0 +1,255 @@
+/*
+
+*/
+body {
+	margin:0px;
+	padding:0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	line-height:1.5em; 
+	background: rgb(251,190,130);
+	text-align: justify;
+}
+
+
+
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.float_l { float: left; }
+.float_r { float: right; }
+.col_w265 {
+	width: 265px;
+}
+.image_wrapper { padding: 8px; border: 1px solid #000; background: #0f1115; }
+.fl_img { float: left; 
+	margin: 3px 30px 15px 0; 
+	border-style: solid;
+    border-width: 10px;
+}
+.border {
+   padding:5px;
+   border:5px solid #fff;
+}
+
+.button a {
+	clear: both;
+	display: block;
+	width: 119px;
+	height: 33px;
+	padding: 3px 0 0 12px;
+	background: url(image/readmore.png) no-repeat;
+	color: #ccc;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:hover {
+	color:#fff;
+}
+
+ul { margin: 20px 10px; padding: 0; list-style:none; }
+ul li { padding-left: 30px; padding-bottom: 3px; margin-bottom: 2px; background: url(images/ul_list.png) no-repeat center left; }
+ul li a { font-weight: normal; text-decoration: none; }
+
+.readmore a {
+	clear: both;
+	display: block;
+	float: right;
+	padding: 0px 0 2px 12px;
+	background: url(image/read_more.png) center left no-repeat;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+#feature_wrapper {
+	width: 100%;
+	height: 240px;
+}
+					 
+#feature {
+	width: 910px;
+	height: 216px;
+	padding: 40px 15px;
+	margin: 0 auto;
+	background: url(image/feature_bck.jpg) repeat-x -10% 16% ;
+}
+
+
+#feature_left {
+	float: left;
+	width: 440px;
+}
+
+#feature_left h1 {
+	text-transform: uppercase;
+		color: #fff;
+}
+#feature_left span {
+	position: relative;
+	width: 253px;
+	height: 119px;
+	background: url(image/ot.png) no-repeat;
+}
+
+#feature_right {
+	float: right;
+	width: 455px;
+}
+
+#feature_right #feature_image {
+	position: relative;
+	width: 435px;
+	height: 215px;
+	padding-top: 90px;
+}
+
+#feature_image img {
+	width: 457px;
+	height: 225px;
+	border-style: solid;
+    border-width: 6px;
+}
+
+
+img:hover {
+    opacity: 0.8;
+  filter: alpha(opacity=80); /* For IE8 and earlier */
+} 
+/* end of feature */
+/* content  */
+#content_wrapper{
+	width: 960px;
+	margin: 0 auto;
+	padding: 30px 15px;
+	display: block;
+}
+
+#content {
+	float: left;
+	width: 560px;
+}
+#publisering p {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ #publisering{
+ 	background: #fff;
+width: 100%;
+display: inline-block;
+text-align: center;
+}
+
+ #publisering figcaption{
+ 	position: relative;
+ 	top: 9px;
+  color: #fff;
+  background: rgba(0,0,0,.3);
+  font-size: .8em;
+  padding: 8px 12px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+ #publisering figure figcaption{
+  transition: opacity .5s;
+  opacity: 1;
+}
+ #publisering figure{
+  margin: 0;
+  min-width: 465px;
+  background: rgb(249, 151, 056);
+}
+ #publisering a {
+  color: white;
+  width: 100%
+}
+
+ #itemImg {
+  display: inline-block;
+  width: 90%;
+}
+#itemImgMap{
+  height: 50px;
+}
+#itemIn a{
+	color: black;
+}
+
+/* sidebar  */
+#siderBar_wrapper {
+	width: 320px;
+	margin: 0 auto;
+	display: inline-block;
+	padding-left: 20px;
+}
+
+.siderBar_top_image {
+	position: relative;
+	padding: 7px;
+	margin-bottom: 10px;
+}
+
+.siderBar_top_image span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 253px;
+	height: 119px;
+	background: url(image/ot.png) no-repeat;
+}
+
+#sidebar_buttom {
+	display: block;
+	float: left;
+	margin-top: 20px;
+	margin-left:20px;
+    margin-right: 20px;
+    background: url(image/feature_bck.jpg) repeat-x;
+}
+
+
+
+.sidebar_buttom_cont {
+	position: relative;
+	padding: 10px;
+	display: inline-block;
+	text-align: center;
+}
+.sidebar_buttom_cont h2{
+	color: white;
+}
+.sidebar_buttom_cont #loadPost {
+display: block;
+text-align: center;
+padding: 4px 0;
+color: #444;
+text-decoration: none;
+-moz-border-radius: 8px;
+border-radius: 8px;
+-moz-box-shadow: 1px 1px 1px #999;
+-webkit-box-shadow: 1px 1px 1px #999;
+box-shadow: 1px 1px 1px #999;
+background-color: #f1f1f1;
+background: -moz-linear-gradient(100% 100% 90deg, #e4e3e3, #f1f1f1);
+background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#e4e3e3));
+background: -webkit-linear-gradient(#f1f1f1, #e4e3e3);
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+
