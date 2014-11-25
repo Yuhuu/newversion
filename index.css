@@ -1,20 +1,131 @@
 /*******************
 style sheet for index.html
 *******************/
+body {
+ background: rgba(000, 000, 000);
+ background-size:100%;
+ padding:0px;
+ margin:0px;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ font-weight: 300;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+#navigation {
+background: rgb(249, 151, 056);
+  width: auto;
+}
+#navigation ul {
+  margin: 0;
+  margin-top:180px;
+  padding: 0;
+  line-height: 0;
+  display: block;
+  zoom: 2;
+  list-style: none;
+ }
+#navigation ul:after {
+  content: " ";
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+  display: block;
+}
+#navigation ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+#navigation.align-right ul li {
+  float: right;
+}
+#navigation.align-center ul {
+  text-align: center;
+}
+#navigation ul li a {
+  color: rgb( 178, 014, 058);
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  position: relative;
+  padding: 15px 30px;
+  font-family: Impact, Charcoal, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#navigation ul li a:hover {
+  color: rgb(000, 000, 000);
+}
+#navigation ul li a:hover:before {
+  width: 100%;
+}
+#navigation ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 13px;
+  height: 6px;
+  width: 6px;
+  background: rgb( 178, 014, 058); 
+
+}
+#navigation ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: rgb(000, 000, 000);
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#navigation ul li.last > a:after,
+#navigation ul li:last-child > a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #navigation ul li {
+    float: none;
+    display: block;
+  }
+  #navigation ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #navigation ul li.last > a,
+  #navigation ul li:last-child > a {
+    border: 0;
+  }
+  #navigation ul li a:after {
+    display: none;
+  }
+  #navigation ul li a:before {
+    display: none;
+  }
+}
 @import url(http://fonts.googleapis.com/css?family=Nosifer);
 @media screen and (min-device-width: 1026px) {
 html {
  width: 100%;
  padding:0;
 }
-body {
- background: rgba(97, 58, 36, 0.8);
- background-size:100%;
- padding:0px;
- margin:0px;
- font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
- font-weight: 300;
-    }
+
 a {
 text-decoration: none;
 display: block;
@@ -40,20 +151,20 @@ ul, ol {
         margin: 0px;
         padding: 0px;
     }
+
+#container
+{
+  top:95px;
+}
 #container  img {
-        width: 1275px;
-        border-right: 3px solid #000;
-        border-left: 3px solid #000;
-        -webkit-box-shadow: #666 3px 2px 7px;
-        -moz-box-shadow: #666 3px 2px 7px;
-        box-shadow: #666 3px 2px 7px;
+        width: 100%;
     }
     .promotion-banner {
         height: 80px;
         margin-bottom: 10px;
         overflow: hidden;
         position: relative;
-        width: 100%;
+        width: 100%
     }
     .promotion-banner img {
         display: block;
@@ -103,7 +214,6 @@ margin-top: 10px;
 }
 li {
   list-style: none;
-  float: left;
   text-align: center;
 } 
 
@@ -118,24 +228,7 @@ li {
 #msg {
   margin-top: -12px;
  }
-#main_nav  li:hover {
-background: rgba(97, 58, 36, 0.9);
-}
 
-#main_nav li {
-width: 128px;
-height: 115px;
-margin: 0 0 0 42px;
-background: rgba(97, 58, 36, 0.6);
-}
-#main_nav a {
-  display: block;
-  padding: 67px 0 0;
-  width: 128px;
-  height: 49px;
-  color: #fff;
-  text-decoration: none;
-}
 #askAdmin a {
    text-decoration: underline;
    color: red;
@@ -147,19 +240,15 @@ background: rgba(97, 58, 36, 0.6);
   width:100%;
 }
 #narrowbody {
+    width:1275px;
    margin-left: auto;
    margin-right: auto;
-   margin-top: -365px;
+   margin-top: -260px;
    position: relative;
    text-align: center;
    padding-top: inherit; 
 }
-#newTable {
-    margin:15px;
-    padding: 25px;
-    border-radius: 5px 5px;
-    border: 1px solid rgb(240, 195, 109);;
-}
+
 #tema {
  display: inline-block;
  background-color: rgb(211, 211, 211);
@@ -189,20 +278,38 @@ background: rgba(97, 58, 36, 0.6);
   box-shadow: 0px 1px rgba(255, 255, 255, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
 }
 .bigtitle {
-    position: absolute;
-    font-size: 43px;
-    text-shadow: 4px 1px 1px rgb(68, 68, 68);
+    position: fixed;
+    z-index:99;
+    width:100%;
+    height: 95px;
     text-align: center;
-    background: rgba(97, 58, 36, 0.9);
+    background: white;
     top: 0px;
-    left: 20px;
-    opacity: 0.6;
 }
 
+#logo {
+    background: transparent url("logo_1221760_web.jpg") no-repeat scroll 0% 0%;
+    width: 260px;
+    margin-left:80px;
+    height: 100px;
+    text-indent: -3333px;
+    border: 0;
+    top-margin:0px;
+    z-index:120;
+}
+
+#logo a {
+    display: block;
+    width: 280px; /* larger than actual image? */
+    height: 120px;
+    text-decoration: none;
+    border: 0;
+}
 #location {
   position: fixed;
+  z-index:150;
   top:70px;
-  right: 129px;  
+  right: 129px; 
   font-weight: 500;
 }
 #NO,#EN{
