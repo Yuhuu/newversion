@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">-->
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 780px)" href="index.css">
     <title>Kebab i Oslo</title>
     <script type="text/javascript" src='slider.js'></script>
+    <LINK REL="SHORTCUT ICON"
+       HREF="image/shortcut.jpg">
 </head>
 
 <body>
@@ -12,7 +14,7 @@
 <div class="bigtitle">
  <!--  <a href="index.html" id ="kebabiOslo">Kebab i Oslo</a> -->
                 <a id="logo" href="index.html">Kebab i Oslo</a>
-          
+
 </div>
 <div id='location'>
                     <div id='NO'>
@@ -24,32 +26,59 @@
 </div>
 
   <div id="slider-wrapper">
-          <div id="container">
-          </div>
-          <div id="navigation">
-                           <ul>
-                              <li class='active'><a href='#'><span>Hjem</span></a></li>
-                              <li><a href='http://student.cs.hioa.no/~s184519/webprosjekt/Anmedelser.php'><span>Annmeldelser</span></a></li>
-                              <li><a href='http://student.cs.hioa.no/~s184519/webprosjekt/GalleriKebab.php'><span>Restauranter </span></a></li>
-                              <li><a href='#'><span>Om oss</span></a></li>
-                              <li class='last'><a href='#'><span>Kontakt</span></a></li>
-                           </ul>
-                        </div>    
-</div>
-<div id = "nav"><ul><li>
-  <a  href="http://student.cs.hioa.no/~s184519/webprosjekt/GalleriKebab.php">
-    <img src="image/gallery/Kebabbydel1.png" alt="Photograph of a lake scene at dusk" /></a></li>   <!-- ikke lage ennå -->
-    <li><a href="http://student.cs.hioa.no/~s184519/webprosjekt/GalleriKebab.php"><img src="image/gallery/Kebabbydel2.png" alt="Photograph of a lake scene at dusk" /></a></li>
-    <li><a href="http://student.cs.hioa.no/~s184519/webprosjekt/GalleriKebab.php"><img src="image/gallery/Kebabbydel4.png" alt="Photograph of a lake scene at dusk" /></a></li>
-    <li><a href="http://student.cs.hioa.no/~s184519/webprosjekt/GalleriKebab.php"><img src="image/gallery/Kebabbydel6.png" alt="Photograph of a lake scene at dusk" /></a></li>
-    </ul>
-</div>
-      <!---->
-<!-- for item which published in main page-->
-<div id="content-wrapper">
+<!--hit-->
+   <div id="container">
+   </div>
+   <div class="bigtitle"><a href="index.html" id ="kebabiOslo">Kebab i Oslo</a>
+	<!--sosiale medier start-->
+		<!--<h2 id="sosiale">
+			<h2>Sosiale medier</h2>
+		</h2>-->
+		<div id="faceb">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com/pages/Kebab-i-Oslo/1588977414659426?fref=ts&amp;layout=button_count&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp" style="overflow:hidden; width:100px; height:20px; float:left;" scrolling="no" frameborder="0" allowTransparency="true">
+		  	</iframe>
+		</div>
+		<div id="twitt">
+			<!--<a href="https://twitter.com/kebabioslo" class="twitter-follow-button" data-show-count="false">Follow @kebabioslo</a>-->
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://twitter.com/kebabioslo">Tweet</a>
+		</div>
+		<div id="insta">
+			<span class="ig-follow" data-id="fa337aa667" data-count="true" data-size="small" data-username="false">
+			</span>
+		</div>
+      <!--sosiale medier slutt-->
+   	<h1 id="logo">
+    	<a href="">Kebab i Oslo</a>
+   	</h1>
+   </div>
+      <div id="BG-top">
+      <script type="text/javascript" src="lokasjon.js"></script>
+      <div id="narrowbody">
+      <div id="msg" class="msg">
+      <div id="temarammen" class="temarammen">
+      <div id="navigation">
+         <ul>
+            <li class='active'><a href='#'><span>Hjem</span></a></li>
+            <li><a href='anmeldelser.html'><span>Anmeldelser</span></a></li>
+            <li><a href='mal.php'><span>Restauranter </span></a></li>
+            <li><a href='omoss.html'><span>Om oss</span></a></li>
+            <li class='last'><a href='kontakt.html'><span>Kontakt</span></a></li>
+         </ul>
+      </div>
+      </div>
+      <!--end  <script type="text/javascript" src="hilse.js"></script>dy-->
+      </div><!--end narrowbody-->
 <div id="indexPublisering">
-   <div class = 'indexItem'> 
-        <div class = 'indexItemTilbud'>
+   <div class = 'indexItem'>
+   <!--Sideslider starter-->
+   <body onLoad="photoA()">
+   		<div id="slider">
+   			<img src="Images/img1.jpg" id="image" >
+   			<div class="left_hold"><img onClick="photo(-1)" class="leftway" src="Images/arrow_left.png"></div>
+   			<div class="right_hold"><img onClick="photo(1)" class="rightway" src="Images/arrow_right.png"></div>
+		</div>
+   <!--Sideslider slutter-->
+        <div class = 'indexItemTilbud' 'whiteBG'>
             <div class="TransBG">
                <p class='fatword'>Sist Post</p>
             </div>
@@ -59,7 +88,7 @@
                <a href='page2.html' class = 'IndexitemImgTilbud'><img src='image/Kebab5pic2.jpg' alt ='picturetoshow' class = 'IndexitemImgTilbud'><img src='image/Kebab3pic2.jpg' alt ='picturetoshow' class = 'IndexitemImgTilbud'></a>
                <a href='page2.html' class = 'IndexitemImgTilbud'><img src='image/Kebab2pic2.jpg' alt ='picturetoshow' class = 'IndexitemImgTilbud'><img src='image/Kebab4pic2.jpg' alt ='picturetoshow' class = 'IndexitemImgTilbud'></a>
          </div>
-        <div class = 'indexItemIn' >
+        <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                <p class='fatword'>Kebab UIO</p>
                <p>Bydel: Storo</p>
@@ -69,8 +98,8 @@
             <img src='image/Kebab3pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
             </a>
          </div>
-         
-         <div class = 'indexItemIn' >
+
+         <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                <p class='fatword'>Kebab BislettUIO</p>
                   <p>Bydel: OSlO S</p>
@@ -79,9 +108,9 @@
                   <img src='image/Kebab4pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                   <img src='image/Kebab5pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                   </a>
-                            
+
         </div>
-        <div class = 'indexItemIn' >
+        <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                              <p class='fatword'>Kebab UIO</p>
                              <p>Bydel: Storo</p>
@@ -90,9 +119,9 @@
                                     <img src='image/Kebab5pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                                 <img src='image/Kebab3pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                             </a>
-                            
+
         </div>
-        <div class = 'indexItemIn' >
+        <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                              <p class='fatword'>Kebab UIO</p>
                              <p>Bydel: Storo</p>
@@ -101,9 +130,9 @@
                                     <img src='image/Kebab4pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                                 <img src='image/Kebab6pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                             </a>
-                            
+
         </div>
-         <div class = 'indexItemIn' >
+         <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                              <p class='fatword'>Kebab UIO</p>
                              <p>Bydel: Storo</p>
@@ -112,9 +141,9 @@
                                     <img src='image/Kebab8pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                                 <img src='image/Kebab9pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                             </a>
-                            
+
         </div>
-         <div class = 'indexItemIn' >
+         <div class = 'indexItemIn' 'whiteBG'>
             <div class="TransBG">
                              <p class='fatword'>Kebab UIO</p>
                              <p>Bydel: Storo</p>
@@ -123,12 +152,24 @@
                                     <img src='image/Kebab2pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                                 <img src='image/Kebab9pic2.jpg' alt ='picturetomap' class = 'IndexitemImg'>
                             </a>
-                            
+
         </div>
       </div><!-- indexitem -->
-      <div class = 'index-rightsideBar'> 
-        <div class = 'indexItem-rightsideBar' >
+      <div class = 'index-rightsideBar'>
+        <div class = 'indexItem-rightsideBar' 'whiteBG'>
+
+        <!--facebook feed--
+
+		                              <div class = 'indexItem-rightsideBar' 'whiteBG'>
+		                              <a class="TransBG greyBG">Facebook</a>
+									  <iframe src="http://www.facebook.com/connect/connect.php?id=1588977414659426&amp;connections=0&amp;stream=1" style="border: 1px; width: 300; height: 380px; padding: 0px 0px 0px 15px; float: right; position:relative;" scrolling="no" allowtransparency="true" ></iframe>
+		                              </div>
+
+                              <!--facebookfeed slutt-->
+                              <br>
+
                                                                <a href='page2.html' class="TransBG greyBG">Kontakt Oss</a>
+											<br>
                                                 <label class="description" for="element_1">Kontakt info
                                  </label>
                                  <br>
@@ -140,43 +181,47 @@
                                 <input id="element_1_3" name="element_1" class="element radio" type="radio" value="3" />
                                 <label class="choice" for="element_1_3">Third option</label>
                                 <input type="hidden" name="form_id" value="931624" />
-                                                
+
                                                 <input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
-                                        </span> 
+                                        </span>
                                  </div>
-                            <div class = 'indexItem-rightsideBar' >
+                            <div class = 'indexItem-rightsideBar' 'whiteBG'>
                             <a href='page2.html' class="TransBG greyBG">Kebab UIO</a>
                              <p>Anmeldeser</p>
 
-                              <p>Er du heldig finner du også et VG. Neidasåjodaså - rask service og bra mat her altså.</p>
+                              <p>Er du heldig finner du ogsÃ¥ et VG. NeidasÃ¥jodasÃ¥ - rask service og bra mat her altsÃ¥.</p>
                               </div>
-                              <div class = 'indexItem-rightsideBar' >
+
+                              <div class = 'indexItem-rightsideBar' 'whiteBG'>
                               <a href='page2.html' class="TransBG greyBG">Kebabbitten</a>
 
                               <p>Anmeldeser</p>
-                              <p>Grei pris på stor kebabporsjon.Nydelig og ryddig grønnsaksdisk.Litt ekstra grillkrydder</p>
+                              <p>Grei pris pÃ¥ stor kebabporsjon.Nydelig og ryddig grÃ¸nnsaksdisk.Litt ekstra grillkrydder</p>
                               </div>
-                                
-                              <div class = 'indexItem-rightsideBar' >
-                             <a href='page2.html' class="TransBG greyBG">Kebab Grønnland</a>
+
+                              <div class = 'indexItem-rightsideBar' 'whiteBG'>
+                             <a href='page2.html' class="TransBG greyBG">Kebab GrÃ¸nnland</a>
                              <p>Bydel: majorstuen</p>
                             <p>Anmeldeser</p>
-                              <p>Grei pris på stor kebabporsjon.Nydelig og ryddig grønnsaksdisk.Litt ekstra grillkrydder på opplevelsen er jo at du kan sitte og lese bransjeblader fra det hardkokte servicemiljøet mens du venter</p>
+                              <p>Grei pris pÃ¥ stor kebabporsjon.Nydelig og ryddig grÃ¸nnsaksdisk.Litt ekstra grillkrydder pÃ¥ opplevelsen er jo at du kan sitte og lese bransjeblader fra det hardkokte servicemiljÃ¸et mens du venter</p>
                                   </div>
-                              <div class = 'indexItem-rightsideBar' >
+                              <div class = 'indexItem-rightsideBar' 'whiteBG'>
                                <a href='page2.html' class="TransBG greyBG">Kebab Vestli</a>
-                            
+
                              <p>Bydel: Storo</p>
                              <p>Anmeldeser</p>
-                              <p>Er jo at du kan sitte og lese bransjeblader fra det hardkokte servicemiljøet mens du venter, er du heldig finner du også et VG. Neidasåjodaså - rask service og bra mat her altså.</p>
+                              <p>Er jo at du kan sitte og lese bransjeblader fra det hardkokte servicemiljÃ¸et mens du venter, er du heldig finner du ogsÃ¥ et VG. NeidasÃ¥jodasÃ¥ - rask service og bra mat her altsÃ¥.</p>
                                  </div>
 
-                     </div>                         
-  </div>
-</div>
-<!--  content-wrapper end -->
-  <div class="clear"></div>
+                     </div>
+
+  </div><!-- id="publisering" -->
+    <div class="clear"></div>
   <script type="text/javascript" src="footer.js"></script>
-</div><!--  end wholebodywrapper-->
+</div><!--end bgtop -->
+</div><!--end narrowbody-->
+
+</div><!--end bgtop -->
+
 </body>
 </html>
