@@ -29,11 +29,11 @@
             return new DOM("#"+elemId);
         return child;
     };
- 
+
     DOM.prototype.trim = function(str) {
         return str.replace(/^\s+|\s+$/g,"");
     };
- 
+
     DOM.prototype.css = function(cssName, cssValue) {
         var stylePrefixedName = this.stylePrefixes[this.stylePrefixIndex]+cssName;
         // var cssPrefixedValue = this.cssPrefixes[this.stylePrefixIndex]+cssValue;
@@ -108,7 +108,7 @@
         this.toggleClass("trans-odd");
         this.css("marginTop",prevIndex*(-1)*slideHeight+"px");
     };
-    
+
      DOM.prototype.slide = function(options) {
         /*--initiate parameter--*/
         options = options || {};
@@ -197,11 +197,11 @@
             slidesId: "slides",
             slides:{
                 count: 5,
-                width: "1060px",
+                width: "1280px",
                 height: "392px",
                 slidePath:[
               "image/forum.png",
-              "image/forum.png",
+              "Student Kebab UIO_3.JPG",
               "image/forum.png",
               "image/forum.png"
                 ],
@@ -216,3 +216,32 @@
             isLinkSupport: true
         });
 };
+
+//Twitter kode
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+//Slutt Twitter kode
+
+//Instagram kode
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src="http://instagramfollowbutton.com/components/instagram/v2/js/ig-follow.js";s.parentNode.insertBefore(g,s);}(document,"script"));
+//Slutt Instagram kode
+
+//Sideslider start
+var imageCount = 1;
+var total = 4;
+
+function photo(x) {
+	var image = document.getElementById('image');
+	imageCount = imageCount + x;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}
+		image.src = "Images/img"+ imageCount +".jpg";
+}
+
+window.setInterval(function photoA() {
+	var image = document.getElementById('image');
+	imageCount = imageCount + 1;
+	if(imageCount > total){imageCount = 1;}
+	if(imageCount < 1){imageCount = total;}
+		image.src = "Images/img"+ imageCount +".jpg";
+},5000);
+//Sideslider slutt
