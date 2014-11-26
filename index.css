@@ -1,28 +1,32 @@
 /*******************
 style sheet for index.html
 *******************/
-html{
-  height: auto !important;
-}
-
-body {
- background: rgba(000, 000, 000);
- background-size:100%;
+html,body {
  padding:0px;
  margin:0px;
- font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+ height: auto;
+ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
  font-weight: 300;
+    background: rgba(0,0,0,.5);
+    background-image: url("image/BodyBG.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 6%;
+    background-size:99%;
 }
+
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #navigation {
-  background: rgb(249, 151, 056);
+background: rgb(249, 151, 056);
+  position: relative;
+  top:11px;
   width: auto;
 }
 #navigation ul {
   margin: 0;
   margin-top:360px;   /*180px*/
-  -moz-margin-top:360px !important;
+ -moz-margin-top:360px ;
   padding: 0;
   line-height: 0;
   display: block;
@@ -30,12 +34,19 @@ body {
   list-style: none;
  }
 #navigation ul:after {
-  content: " ";
-  height: 0;
-  font-size: 0;
-  clear: both;
-  visibility: hidden;
   display: block;
+   font-size: 15px;
+   position: relative;
++  padding: 15px 20px;       /*15px 30px*/
+   font-family: Impact, Charcoal, sans-serif;
+   font-weight: 700;
+   text-transform: uppercase;
+background: rgb(249, 151, 056);
+   right: -3px;
+   top: 13px;
+   height: 6px;
++  width: 6px;                   /*prikkene mellom ordene*/
++  background: rgb( 178, 014, 058);
 }
 #navigation ul li {
   display: inline-block;
@@ -54,7 +65,7 @@ body {
   display: block;
   font-size: 15px;
   position: relative;
-  padding: 15px 20px;       /*15px 30px*/
+  padding: 15px 30px;
   font-family: Impact, Charcoal, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -77,8 +88,8 @@ body {
   right: -3px;
   top: 13px;
   height: 6px;
-  width: 6px;                   /*prikkene mellom ordene*/
-  background: rgb( 178, 014, 058);
+  width: 6px;
+  background: rgb( 178, 014, 058); 
 
 }
 #navigation ul li a:before {
@@ -101,52 +112,29 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  #navigation ul li {
-    float: none;
-    display: block;
-  }
-  #navigation ul li a {
-    width: 100%;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border-bottom: 1px solid #fb998c;
-  }
-  #navigation ul li.last > a,
-  #navigation ul li:last-child > a {
-    border: 0;
-  }
-  #navigation ul li a:after {
-    display: none;
-  }
-  #navigation ul li a:before {
-    display: none;
-  }
-}
-@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
 @media screen and (min-device-width: 1026px) {
 html {
  width: 100%;
  padding:0;
 }
 
+#whole-wrapper {
+  position: relative;
+    height: 1060px;
+    width:1060px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(225,225,225,0.9);
+    display: inline-block;
+}
+
 a {
 text-decoration: none;
 display: block;
 }
-#temarammen,iframe {
-  width: 100%;
-}
-#footer p {
-  color: #fff;
-}
-table {
-  background-color: rgb(211, 211, 211);
-  border:none;
-  margin-top: -17px;
-  padding:25px 5px;
-}
+
+
 div {
   margin: 0px;
   padding: 0px;
@@ -157,9 +145,95 @@ ul, ol {
         padding: 0px;
     }
 
+/*logo og header*/
+
+.bigtitle {
+    position: relative;
+    z-index:99;
+    height: 95px;
+    width:1060px;
+    min-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background: rgba(225,225,225,0.1);
+    top: 0px;
+    border: dotted 1px #ff0000;
+}
+
+#logo {
+    background: transparent url("logo_1221760_web.jpg") no-repeat scroll 0% 0%;
+    width: 260px;
+    margin-left:80px;
+    height: 100px;
+    text-indent: -3333px;
+    border: 0;
+    top-margin:0px;
+    z-index:120;
+}
+
+#logo a {
+    display: block;
+    width: 280px; /* larger than actual image? */
+    height: 120px;
+    text-decoration: none;
+    border: 0;
+}
+
+/*logo og header end*/
+/*location(language) begin*/
+#location {
+  position: fixed;
+  z-index:150;
+  top:20px;
+  right: 129px; 
+  font-weight: 500;
+/*  background: rgb(249, 151, 056);*/
+  padding: 9px 3px 5px 25px;
+}
+#NO,#EN{
+  display: inline;
+}
+#location a {
+  color: rgb(249, 151, 056);
+  display: inline;
+  width: 100px;
+  float: left;
+
+}
+#NO a {background: url(image/No.png) no-repeat 43% 68%;
+  background-size: 30px 30px; 
+}
+#EN a {background: url(image/En.png) no-repeat 43% 68%;
+  background-size: 30px 30px; 
+}
+#EN a:hover {
+  color: rgb( 178, 014, 058);;
+  background: url(image/EnHover.png) no-repeat 43% 48%;
+  background-size: 30px 30px; 
+}
+
+#NO a:hover {
+  color: rgb( 178, 014, 058);
+  background: url(image/NoHover.png) no-repeat 43% 48%;
+  background-size: 30px 30px; 
+}
+
+/*location(language) end here*/
+/*slider begin*/
+
+
+#slider-wrapper {
+   position: relative;
+    width:1060px;
+    min-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+}
 #container
-{
-  top:95px;
+{ 
+  position: relative;
+  top:100px;
 }
 #container  img {
         width: 100%;
@@ -212,7 +286,7 @@ ul, ol {
         -webkit-transition: margin-top 1s linear;
         -o-transition: margin-top 1s linear;
         transition: margin-top 1s linear;
-    }
+    }  
     footer{
 text-align: center;
 margin-top: 10px;
@@ -220,7 +294,36 @@ margin-top: 10px;
 li {
   list-style: none;
   text-align: center;
+} 
+
+/*slider end*/
+/*bydel begin*/
+#nav {
+  position: relative;
+  width: 1060px;
+  background: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  top: 10px; 
+  left: 0px;
 }
+#nav ul {
+  display: block;
+  list-style: none;
+  text-align: center;
+}
+
+#nav ul li {
+  display: inline-block;
+    padding: 15px;
+}
+
+#nav ul li a img{
+  width: 100px;
+
+}
+
+/*bydel end*/
 
 #publisering p {
   text-transform: uppercase;
@@ -229,151 +332,38 @@ li {
 #indexPublisering p {
   text-align: center;
 }
-
-#msg {
-  margin-top: -12px;
- }
-
-#askAdmin a {
-   text-decoration: underline;
-   color: red;
-}
-
-#newDIV {
-  margin-right: 20px;
-  margin-top: 30px;
-  width:100%;
-}
-#narrowbody {
-    width:1275px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: -260px;
-   position: relative;
-   text-align: center;
-   padding-top: inherit;
-}
-
-#tema {
- display: inline-block;
- background-color: rgb(211, 211, 211);
- margin-top: 5px;
-}
-#tema {
- float: left;
- width: 250px;
-}
-#temarammen {
-  background-size: 0.6%;
-  padding:5px;
-  }
-/*#nav_bar {
- margin-left: auto;
- margin-right: auto;
-}*/
-#kebabiOslo {
-  color: #fff;
-}
-
-.titlebar {
-  border-radius: 2px;
-  height: 25px;
-  background-size: 100%;
-  margin-top: -14px;
-  box-shadow: 0px 1px rgba(255, 255, 255, 0.1) inset, 0px 1px 2px rgba(0, 0, 0, 0.15);
-}
-.bigtitle {
-    position: fixed;
-    z-index:99;
-    width:100%;
-    height: 95px;
-    text-align: center;
-    background: white;
-    top: 0px;
-}
-
-#logo {
-    background: transparent url("logo_1221760_web.jpg") no-repeat scroll 0% 0%;
-    width: 260px;
-    margin-left:80px;
-    height: 100px;
-    text-indent: -3333px;
-    border: 0;
-    top-margin:0px;
-    z-index:120;
-    top: 0px;
-}
-
-#logo a {
-    display: block;
-    width: 280px; /* larger than actual image? */
-    height: 120px;
-    text-decoration: none;
-    border: 0;
-}
-#location {
-  position: fixed;
-  z-index:150;
-  top:70px;
-  right: 129px;
-  font-weight: 500;
-}
-#NO,#EN{
-  display: inline;
-}
-#location a {
-  color: #fff;
-  display: inline;
-  width: 100px;
-  float: left;
-}
-#NO a {background: url(image/No.png) no-repeat 43% 48%;
-  background-size: 30px 30px;
-}
-#EN a {background: url(image/En.png) no-repeat 43% 48%;
-  background-size: 30px 30px;
-}
-#EN a:hover {
-  color: #000;
-  background: url(image/EnHover.png) no-repeat 43% 48%;
-  background-size: 30px 30px;
-}
-
-#NO a:hover {
-  color: #000;
-  background: url(image/NoHover.png) no-repeat 43% 48%;
-  background-size: 30px 30px;
-}
-#publisering {
-  position: relative;
-  margin: 0 30px;
-  background: white;
-  display: inline-block;
-  padding: 0px;
-}
 .indexItem-rightsideBar{
   margin-top:4px;
-  margin-left:5px;  /*5px*/
+  margin-left:5px;
   padding: 5px;
-  left: 100px;
-  width: 94%;   /*94%*/
+  width: 94%;
   float: left;
   height: 100%;
   display: inline-block;
-  background: rgb(249, 151, 056);        /*#F5F5F0*/
+  background: #F5F5F0;
 }
 .indexItem-rightsideBar a {
-   color: rgb( 178, 014, 058);          /*#0094DE*/
+   color: #0094DE;
     text-decoration: none;
-    font-weight: bold;
 }
 .indexItem-rightsideBar a:hover {
   color: white;
 }
 
-#indexpublisering {
+#content-wrapper {
   position: relative;
-  margin: 0 30px;
+    height: 1795px;
+    width:1060px;
+    top:12px;
+    min-width: 1060px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(225,225,225,0.1);
+}
+
+#indexpublisering {
+  position: relative; 
+  top:20px;
   background: white;
   display: inline-block;
   padding: 0px;
@@ -409,10 +399,6 @@ li {
 .clear {
     clear: both;
 }
-.question {
-  background-position: 0 10px;
-  background: url(//wwwimg.roku.com/hero-images/sprite_meet-roku-wide.png) no-repeat;
-}
 .TransBG {
   background: url('shadow.png') no-repeat scroll 100% 0px ;
   padding: 14px;
@@ -421,34 +407,19 @@ li {
 .greyBG {
   background-color: #313131;
 }
-.nav_ul{
-display: block;
-width: 1008px;
-margin: 235px auto 0 auto;
-font-size: 18px;
-line-height: 20px;
-overflow: hidden;
-}
-.whiteBG {
-  background: url('shadow.png') no-repeat scroll 100% 0px rgb(177,177,177);
-  min-height: 245px;
-}
-.left_side table {
-  font-size: 92%;
-}
+
+
 .indexItem{
   margin: 5px;
   width: 70%;
   float: left;
   background: #F5F5F0;
-  margin-top: 2px;
 }
 .index-rightsideBar{
   margin: 5px;
   background: #313131;
-  width: 27%;   /*26%*/
+  width: 26%;
   float: left;
-  margin-left: 12px;
   height: 100%;
   padding: 5px;
 }
@@ -523,29 +494,38 @@ height: 46%;
   height: 100%;
 }
 
-#twitt{
-  float: left;
-  /*right: 900px;*/
-  margin-left: 0%;
+#footer p {
+  color: #fff;
 }
-#faceb{
-  float: left;
-  /*right: 900px;*/
-  margin-left: 50%;   /*71%*/
-  z-index: 200;
-  top: 0px;
 }
-#insta{
-  float: left;
-  margin-left: 0%;
-  z-index: 1;
+
+@media screen and (max-width: 768px) {
+  #navigation ul li {
+    float: none;
+    display: block;
+  }
+  #navigation ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+  #navigation ul li.last > a,
+  #navigation ul li:last-child > a {
+    border: 0;
+  }
+  #navigation ul li a:after {
+    display: none;
+  }
+  #navigation ul li a:before {
+    display: none;
+  }
 }
+
 @-moz-document url-prefix(){
   #navigation ul {
     margin: 0;
-    margin-top:360px;   /*180px*/
+    margin-top:90px !important;
   }
-}
-@media screen and (-webkit-min-device-pixel-ratio:0){
-  #navigation ul{margin-top:180px;}
 }
