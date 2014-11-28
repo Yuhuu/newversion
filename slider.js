@@ -29,11 +29,11 @@
             return new DOM("#"+elemId);
         return child;
     };
-
+ 
     DOM.prototype.trim = function(str) {
         return str.replace(/^\s+|\s+$/g,"");
     };
-
+ 
     DOM.prototype.css = function(cssName, cssValue) {
         var stylePrefixedName = this.stylePrefixes[this.stylePrefixIndex]+cssName;
         // var cssPrefixedValue = this.cssPrefixes[this.stylePrefixIndex]+cssValue;
@@ -108,7 +108,7 @@
         this.toggleClass("trans-odd");
         this.css("marginTop",prevIndex*(-1)*slideHeight+"px");
     };
-
+    
      DOM.prototype.slide = function(options) {
         /*--initiate parameter--*/
         options = options || {};
@@ -196,14 +196,13 @@
             containerId: "container",
             slidesId: "slides",
             slides:{
-                count: 5,
-                width: "1280px",
-                height: "392px",
+                count: 4,
+               
                 slidePath:[
-              "image/forum.png",
-              "Student Kebab UIO_3.JPG",
-              "image/forum.png",
-              "image/forum.png"
+              "image/Kebab9pic2.jpg",
+              "image/Kebab9pic2.jpg",
+              "image/Kebab9pic2.jpg",
+              "image/Kebab9pic2.jpg"
                 ],
                 slideLink:[
                 "https://www.chess.no",
@@ -212,7 +211,7 @@
                 "http://google.com.hk/"
                 ]
             },
-            interval: 2000,
+            interval: 3000,
             isLinkSupport: true
         });
 };
@@ -230,18 +229,18 @@ var imageCount = 1;
 var total = 4;
 
 function photo(x) {
-	var image = document.getElementById('image');
-	imageCount = imageCount + x;
-	if(imageCount > total){imageCount = 1;}
-	if(imageCount < 1){imageCount = total;}
-		image.src = "Images/img"+ imageCount +".jpg";
+    var image = document.getElementById('image');
+    imageCount = imageCount + x;
+    if(imageCount > total){imageCount = 1;}
+    if(imageCount < 1){imageCount = total;}
+        image.src = "Images2/img"+ imageCount +".jpg";
 }
 
 window.setInterval(function photoA() {
-	var image = document.getElementById('image');
-	imageCount = imageCount + 1;
-	if(imageCount > total){imageCount = 1;}
-	if(imageCount < 1){imageCount = total;}
-		image.src = "Images/img"+ imageCount +".jpg";
+    var image = document.getElementById('image');
+    imageCount = imageCount + 1;
+    if(imageCount > total){imageCount = 1;}
+    if(imageCount < 1){imageCount = total;}
+        image.src = "Images2/img"+ imageCount +".jpg";
 },5000);
 //Sideslider slutt
