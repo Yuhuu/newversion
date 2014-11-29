@@ -402,6 +402,11 @@ padding: 2% 3%;
     margin-top: 0px;
     background: rgba(225,225,225,0.9);
 }
+
+.padding-bottom5{
+  top: -4px;
+}
+
 /*========breadcrumb-container========*/
 .breadcrumb-container {
   height: 28px;
@@ -414,7 +419,7 @@ padding: 2% 3%;
 }
 .breadcrumbImg{
  width: 25px;
-  height: 25px;
+height: 25px;
 }
 .clear {
   width: 0px;
@@ -459,27 +464,32 @@ margin-top: 5px;
   display: inline-block;
     padding: 17px;
     width: 11%;
+
 }
 
 #nav ul li a img{
   border-radius: 50%;
-  opacity: 0.9;
-  filter: alpha(opacity=40);
   width: 120px;
   height: 120px;
-  padding: 5px;
+  padding: 25px;
   background-image: url("image/button.png");
-  background-size: 105%;
+  background-size: 94%;
+  background-position: 42% 65%;
 }
 
 #nav ul li a img:hover {
   border-radius: 50%;
+   opacity: 0.9;
+  filter: alpha(opacity=40);
   width: 120px;
   height: 120px;
-  padding: 5px;
-  background-color:#20285A;
+  padding: 25px;
 }
 
+#nav ul li a:hover {
+  text-decoration: none;
+
+}
 #content-wrapper {
   position: relative;
     top:-344px;
@@ -497,8 +507,8 @@ margin-top: 5px;
 }
 /*bydel end*/
 /*geenral greier*/
-.padding10px{
-  padding: 10px;
+.padding2px{
+  padding: 2px;
 }
 .col-29 {
   width: 29%;

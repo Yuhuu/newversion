@@ -84,7 +84,7 @@ window.addEventListener("scroll", yScroll);
 <!--  content-wrapper2 end -->
 </div><!--  end whole-bodywrapper-->
     <div class="bottom-content"> 
-<?php
+                         <?php
     $db = new mysqli("student.cs.hioa.no", "s184519",null,"s184519");
     $iUser = NULL;
     $iMessage = NULL;
@@ -103,27 +103,26 @@ window.addEventListener("scroll", yScroll);
             </div>  
             <div class='floatleft col-60 restaurantInfo'>
               <h1>". $row['Navn']."</h1>
-                <a href='#''><img src='bilder/". $row['pic2']."' alt='". $row['pic1']."' />
-                  <img src='bilder/". $row['pic1']."' alt='". $row['pic1']."' />
+                <a href='#''><img src='image/". $row['pic2']."' alt='imageOf". $row['pic2']."' />
+                  <img src='image/". $row['pic1']."' alt='imageOf". $row['pic1']."' />
                 </a>
            </div>
         <div class = 'floatright col-35 restaurantInfotext'>
             <strong>". $row['gataAdressen']."</strong>
             <ul>
-            <li><p>". $row['gataAdressen']." ligger i ". $row['bydel'].".</p></li>
+            <li><p>". $row['Navn']." ligger i ". $row['bydel'].".</p></li>
             <li><p>Informasjon endret: ". $row['time'].".</p></li>
+            <li><p>Informasjon er fra". $row['time']."</p></li>
             </ul>
-            <h4>Kort Anmeldelser</h4>
+            <h4>Infor </h4>
             <p>". $row['Anmeldelser']."</p>
             <div>
             <a href='#''><img src='image/read_more.png' alt='Photograph'/><img src='image/read_more.png' alt='Photograph'/> Les mer</a>
             </div>
         </div>
-        
-</div>";
+        </div>";
     }
   ?>
-                                
     </div>
                 </div>          
                         <div class="Anbefarbar">
@@ -140,7 +139,7 @@ window.addEventListener("scroll", yScroll);
                                 <h2>RestaurantNavn1</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod expedita distinctio.</p>
                         </div>
-        </div> 
+
         <div class="mainFooter">
                 <p>Copyright &copy; 2014 <a href="#">Thundercats</a></p>
                 <div id="faceb">

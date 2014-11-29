@@ -3,10 +3,10 @@
 <html>
 
 <head>
-    <title>Kebab i Oslo</title>
-            <meta charset="utf-8">
-            <link type="text/css" rel="stylesheet" href="paralax.css"> 
-            <script type="text/javascript" src='slider.js'></script>
+	<title>Kebab i Oslo</title>
+        	<meta charset="utf-8">
+        	<link type="text/css" rel="stylesheet" href="paralax.css"> 
+        	<script type="text/javascript" src='slider.js'></script>
                 <link rel="SHORTCUT ICON" href="image/shortcut.jpg">
                 <script>
 var pagetop, menu, yPos;
@@ -40,7 +40,7 @@ window.addEventListener("scroll", yScroll);
         </div>
 </div>
         <div class="container">
-            <div class="allthestoff-wrapper padding2px">            
+            <div class="allthestoff-wrapper padding10px">            
                 <div class ="breadcrumb-container"><a  href="#"><img class ="breadcrumb breadcrumbImg" src="image/home.png" alt="Photograph" /></a> <img  class ="breadcrumb Forbreadcrumb" src="image/read_more.png" alt="Photograph" /><a href="#" ><span class ="breadcrumb linkForForbreadcrumb">BYDELER</span></a></div>  
                 <!-- for square of 6 city images -->
                 <div class="bydel" id="bydelcontainer">  
@@ -82,27 +82,72 @@ window.addEventListener("scroll", yScroll);
                 </div>
 </div>
 <!--  content-wrapper2 end -->
-
-    <div class="bottom-content"> 
-                         
+</div><!--  end whole-bodywrapper-->
+    <div class="bottom-content"> <?php
+    $db = new mysqli("student.cs.hioa.no", "s184519",null,"s184519");
+    $iUser = NULL;
+    $iMessage = NULL;
+    if($db->connect_errno > 0){
+      die('failed to connect [' . $db->connect_error . ']');
+    }
+    $sql = "SELECT * FROM Forum ORDER BY bydel";
+    if(!$result = $db->query($sql)){
+      die('You done wrong [' . $db->error . ']');
+    } 
+    while($row = $result->fetch_assoc()){
+      echo "<div class= 'col-full wrapper'>
+        <div class='ribbon-wrapper-green'>
+            <div class='ribbon-green'>KJØP idag!</div>
+        </div>  
+        <div class='floatleft col-60'>
+          <div class='vertical'><h1>.". $row['Navn']."</h1></div>
+          <a href='#''><figure><img src='bilder/". $row['pic2']."' alt='". $row['pic1']."' />
+          <img src='bilder/". $row['pic1']."' alt='". $row['pic1']."' /><figcaption>". $row['Title']."</figcaption></figure>
+        </a>
+       </div>
+    <div class = 'floatright col-35'>
+    <strong>". $row['gataAdressen']."</strong>
+    <ul><li>
+    <p>Den Restaurant ligger i ". $row['bydel'].".</p></li><li>
+    <p>Informasjon endret: ". $row['bydel'].".</p></li><li>
+    <h2>Kort Anmeldelser</h2>
+    </li><li>". $row['Anmeldelser']."
+    </li></ul>
     </div>
-    </div><!--  end whole-bodywrapper-->
-                </div>          
-                        <div class="Anbefarbar">
-                                <h2>RestaurantNavn1</h2>
+  </div>";
+    }
+  ?>
+                                
+                                </div>
+                </div>
+
+                        <div class="sidebar1">
+                                <h2>Top Sidebar</h2>
+                                <div id="list2">
+   <ol>
+      <li><p>The Netherlands</p></li>
+      <li><p>The United States of America</p></li>
+      <li><p>The Philippines</p></li>
+      <li><p>The United Kingdom</p></li>
+   </ol>
+</div>
+                        </div>
+                                
+                        <div class="sidebar2">
+                                <h2>Middle Sidebar</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </div>                                
 
-                        <div class="Anbefarbar">
-                                <h2>RestaurantNavn1</h2>
+                        <div class="sidebar3">
+                                <h2>Bottom Sidebar</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod expedita distinctio.</p>
                         </div>  
 
-                        <div class="Anbefarbar">
-                                <h2>RestaurantNavn1</h2>
+                        <div class="sidebar4">
+                                <h2>Bottom Sidebar</h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod expedita distinctio.</p>
                         </div>
-
+        </div> 
         <div class="mainFooter">
                 <p>Copyright &copy; 2014 <a href="#">Thundercats</a></p>
                 <div id="faceb">
@@ -118,4 +163,6 @@ window.addEventListener("scroll", yScroll);
         </div>
 
 </body>
+
+
 </html>
